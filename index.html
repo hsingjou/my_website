@@ -284,12 +284,25 @@
             <div id="ig_exercise_overlay" onclick="off_ig_exercise()">
                 <div class="ig_exercise_content" >
                     <h4 style="text-align: center; color: #A23400;">instagram網頁版切版練習</h4><br>
+                    <h5 style="padding-left: 15px;">作品介紹</h5>
                     <ul>
-                        <li>為模仿instagram網頁版首頁之切版練習</li>
-                        <li>使用技術包含：HTML、CSS、JavaScript（overlay）</li>
-                        <li style="color: red;">此練習尚無響應式版本</li>
+                        <li>此為模仿instagram網頁版首頁之切版練習</li>
+                        <li>係以HTML、CSS、JavaScript為技術完成之</li>
+                        <li style="color: red;">此練習作品暫時非響應式網頁</li>
+                        <li>instagram logo來源：https://logos-download.com/wp-content/uploads/2016/03/Instagram_Logo_2016.png</li>
+                        <li>icon來源：google font icon- https://fonts.google.com/icons</li>
                     </ul>
-                   
+                    <h5 style="padding-left: 15px;">在此作品我學到......</h5>
+                    <ul>
+                        <li>套用google font icon</li>
+                    <li>overlay之寫法</li>
+                    <li>當按鈕套用google icon，如果文字因此沒有辦法水平置中之解決辦法</li>
+                    <li>按下按鈕開啟div，點畫面上任一處（除被開啟之div外）能關閉該div之方法</li>
+                    <li>按下按鈕改變按鈕上之文字之方法</li>
+                    <li>調整元素position寫法</li>
+                    <li>inline-block之用法，以及和block、inline之差別</li>
+                    </ul>
+                    
                     <br>
                     <div style="text-align: center;">
                         <button onclick="location.href='https://hsingjou.github.io/ig_front_exercise/'">DEMO</button>
@@ -319,16 +332,26 @@
             <div id="list_overlay" onclick="off_list()">
                 <div class="list_content">
                     <h4 style="text-align: center; color: #A23400;">TO-DO LIST</h4><br>
+                    <h5 style="padding-left: 15px;">作品介紹</h5>
                     <ul>
-                        <li>功能：新增記事、刪除記事、完成</li>
-                        <li>使用技術包含：HTML、CSS、JavaScript</li>
-                        <li>此練習具響應式效果</li>
+                        <li>此為清單，可以新增記事、刪除記事，完成記事則可點擊記事內容</li>
+                        <li>係以HTML、CSS、JavaScript為技術完成之</li>
                     </ul>
-                 
+                    <h5 style="padding-left: 15px;">在此作品我學到......</h5>
+                    <ul>套用google font字體</li>
+                    <li>釐清magin、padding之差別，並且了解何謂box-sizing</li>
+                    <li>用css畫出一個勾勾</li>
+                    <li>偽元素（:before）之觀念。此練習中並無使用:after，不過也亦同釐清了</li>
+                    <li>新增與刪除文本節點之方法</li>
+                    <li>如何讓清單項目可以顯示為已完成之方法</li>
+                    <li>了解classList之常見用法</li>
+                    <li>套用google font icon</li>
+                    <li>inline-block之用法，以及和block、inline之差別</li>
+                    </ul>
                     <br>
                     <div style="text-align: center;">
-                        <button onclick="location.href='https://hsingjou.github.io/to-do_list/'">DEMO</button>
-                        <button onclick="location.href='https://github.com/hsingjou/to-do_list'">github code</button>
+                        <button onclick="location.href='https://hsingjou.github.io/to_do-list/'">DEMO</button>
+                        <button onclick="location.href='https://github.com/hsingjou/to_do-list'">github code</button>
                     </div>
                 </div>
             </div>
@@ -353,12 +376,23 @@
             <div id="weather_search_overlay" onclick="off_weather_search()">
                 <div class="weather_search_content">
                     <h4 style="text-align: center; color: #A23400;">weather search</h4><br>
+                    <h5 style="padding-left: 15px;">作品介紹</h5>
                     <ul>
-                        <li></li>
-                        <li>使用技術包含：HTML、CSS、JavaScript</li>
-                        <li>此練習具響應式效果</li>
+                        <li>此為天氣搜尋網頁，可以搜尋世界上各城市之天氣資訊，搜尋欄位下方亦提供城市英文名字供使用者參考</li>
+                        <li>係以HTML、CSS、JavaScript為技術，連結open data完成之搜尋天氣功能頁面</li>
+                        <li>open data:https://openweathermap.org</li>
+                        <li>圖片來源皆來自：https://www.irasutoya.com/2014/08/blog-post_181.html/</li>
+                        <li>此練習學習自：https://youtu.be/MIYQR-Ybrn4?si=lLlM4ah7B37QlEOq</li>
                     </ul>
-               
+                    <h5 style="padding-left: 15px;">在此作品我學到......</h5>
+                    <ul>
+                        <li>如何連結api</li>
+                        <li>異步函數aync function(){}之概念</li>
+                        <li>innerHTML之概念</li>
+                        <li>以fetch抓取資料，並且將資料轉成json數據之作法</li>
+                        <li>（）＝>之意涵</li>
+                    </ul>
+             
                     <br>
                     <div style="text-align: center;">
                         <button onclick="location.href='https://hsingjou.github.io/weather_search/'">DEMO</button>
@@ -450,50 +484,6 @@
             </div>
         </div>
         
-        <script>
-            $( ".logo" ).textillate();
-
-            function ig_exercise_on(){
-                document.getElementById("ig_exercise_overlay").style.display="block";
-            }
-            function off_ig_exercise(){
-                document.getElementById("ig_exercise_overlay").style.display="none";
-            }
-
-            function conan_website_on(){
-                document.getElementById("conan_website_overlay").style.display="block";
-            }
-            function off_conan_website(){
-                document.getElementById("conan_website_overlay").style.display="none";
-            }
-            
-            function list_on(){
-                document.getElementById("list_overlay").style.display="block";
-            }
-            function off_list(){
-                document.getElementById("list_overlay").style.display="none";
-            }
-
-            function quiz_on(){
-                document.getElementById("quiz_overlay").style.display="block";
-            }
-            function off_quiz(){
-                document.getElementById("quiz_overlay").style.display="none";
-            }
-
-            function weather_search_on(){
-                document.getElementById("weather_search_overlay").style.display="block";
-            }
-            function off_weather_search(){
-                document.getElementById("weather_search_overlay").style.display="none";
-            }
-
-            function dessert_shop_on(){
-                document.getElementById("dessert_shop_overlay").style.display="block";
-            }
-            function off_dessert_shop(){
-                document.getElementById("dessert_shop_overlay").style.display="none";
-            }
-        </script>
+     <script src="script.js"></script>
 </body>
 </html>
