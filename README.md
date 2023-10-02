@@ -7,6 +7,6 @@
 
 <h3>在此練習作品中我學到......</h3>
 <ul>
-<li></li>
-<li></li>
+<li>隨螢幕大小自動關閉menu overlay之寫法</li>
+<li>在overlay下，點選menu，會關閉overlay並連結到相對應之區塊的寫法</li>
 </ul>
